@@ -5,23 +5,32 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
-import Home from "./components/Home";
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import Hero from "./components/Hero"
 
 function App() {
   return (
     <div className="App">
-      <Router>
-          <Nav />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/resume" component={Resume} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="*" exact component={Home} />
-          </Switch>
-      </Router>
+      <div className="wrapper">
+      <Header />
+      <Hero />
+        <Router>
+            <Nav />
+            <Switch>
+              <Route path="/" exact component={About} />
+              <Route path="/about" component={About} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/resume" component={Resume} />
+              <Route path="/portfolio" component={Portfolio} />
+              <Route path="*" exact component={About} />
+            </Switch>
+        </Router>
+        <div className="push"></div>
+        </div>
+        <Footer />
     </div>
+    
   );
 }
 
