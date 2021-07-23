@@ -215,19 +215,18 @@ a:not(.active):hover a {
 
 /* FORM CARD  */
 .form-container  {
-  position: absolute;
-  left: 60%;
-  top: 70%;
+  position: relative;
   transform: translate(-50%, -50%);
-  height: 30%;
-  width: 60%;
-  background: #f2f2f2;
+  height: 20rem;
+  width: 35rem;
+  background: black;
   overflow: hidden;
   border-radius: 2px;
   cursor: pointer;
-  box-shadow: 0 0 35px 8px rgb(67, 202, 255);
-  margin-top: 0rem;
+  box-shadow: 0 0 35px 8px rgb(67 202 255);
+  margin-top: 12rem;
   margin-bottom: 2rem;
+  margin-left: 15rem;
 }
 
 .form-content {
@@ -237,6 +236,7 @@ a:not(.active):hover a {
   text-align: justify;
   color: black;
   padding: 40px;
+  background: black;
   /* font-family: 'Merriweather', serif; */
 }
 .flap {
@@ -287,4 +287,13 @@ a:not(.active):hover a {
 .parent {
   padding: 3%;
   margin-left: 25%;
+}
+
+.projName {
+  padding: 1rem;
+}
+
+.profileImages {
+  height: 16rem;
+  width: 30rem;
 }

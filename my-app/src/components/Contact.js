@@ -34,8 +34,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="form-container">
-    <section className="form-content">
+    <section className="parent">
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
@@ -58,8 +57,6 @@ function ContactForm() {
         <button data-testid="button" type="submit">Submit</button>
       </form>
     </section>
-    <div className="flap"></div>
-    </div>
   );
 }
 
