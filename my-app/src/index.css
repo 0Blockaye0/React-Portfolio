@@ -37,13 +37,13 @@ li {
 }
 
 a {
-  color: rgba(81, 200, 255, 0.712);
+  color: #51c8ffb6;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
-  color: rgb(67, 202, 255);
+  color: #43caff;
 }
 
 .section-headers {
@@ -213,7 +213,7 @@ a:not(.active):hover a {
   display: none;
 }  */
 
-/* FORM CARD  */
+/* PROJECT DISPLAY CARD  */
 .form-container  {
   position: relative;
   transform: translate(-50%, -50%);
@@ -249,7 +249,7 @@ a:not(.active):hover a {
   content: "";
   height: 100%;
   width: 50%;
-  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white;
+  /* background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white; */
   background-position: 100px;
   background-repeat: no-repeat;
   transition: 1s;
@@ -262,7 +262,7 @@ a:not(.active):hover a {
   height: 100%;
   width: 50%;
   right: 0;
-  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white;
+  /* background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white; */
   background-position: -200px;
   background-repeat: no-repeat;
   transition: 1s;
@@ -276,6 +276,17 @@ a:not(.active):hover a {
 .form-container:hover .flap::before{
   transform: translatex(-300px);
 }
+
+.git-hub-icon {
+  float: left;
+  margin-right: 1rem;
+  box-shadow: 0 0 15px #51c8ffb6;
+}
+
+.git-hub-icon:hover {
+  box-shadow: 0 10px 20px #51c8ffef;
+}
+
 /* END */
 
 #goodbyeH3 {
@@ -297,3 +308,97 @@ a:not(.active):hover a {
   height: 16rem;
   width: 30rem;
 }
+
+
+/* CONTACT FORM */
+#contact-form {
+  background-color: rgba(72,72,72,0.9);
+  padding: 10px 20px 30px 20px;
+  max-width: 100%;
+  width: 40%;
+  float: left;
+  left: 61%;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -319px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  font-weight: bold;
+  color: #E5E6E7;
+}
+
+#contact-form input,   
+#contact-form select,   
+#contact-form textarea,   
+#contact-form label { 
+   font-size: 15px;  
+   margin-bottom: 2px;
+   font-family: Arial, san-serif;
+} 
+#contact-form input,   
+#contact-form select,   
+#contact-form textarea { 
+   width:100%;
+   background: #fff;
+   border: 0; 
+   -moz-border-radius: 4px;  
+   -webkit-border-radius: 4px;  
+   border-radius: 4px;
+   margin-bottom: 25px;  
+   padding: 5px;  
+}  
+#contact-form input:focus,   
+#contact-form select:focus,   
+#contact-form textarea:focus {  
+   background-color: #E5E6E7; 
+}  
+#contact-form textarea {
+   width:100%;
+   height: 150px;
+}
+#contact-form button[type="submit"] {
+   cursor:pointer;
+   width:100%;
+   border:none;
+   background:#991D57;
+   background-image:linear-gradient(to bottom, #51c8ffb6 0%, #1d99d3da 52%);
+   background-image:-moz-linear-gradient(to bottom, #51c8ffb6 0%, #1d99d3da 52%);
+   background-image:-webkit-linear-gradient(to bottom, #51c8ffb6 0%, #1d99d3da 52%);
+   color:#FFF;
+   margin:0 0 5px;
+   padding:10px;
+   border-radius:5px;
+}
+#contact-form button[type="submit"]:hover {
+   background-image:linear-gradient(to bottom, #43caff 0%, #8ccee9 52%);
+   background-image:-moz-linear-gradient(to bottom, #43caff 0%, #8ccee9 52%);
+   background-image:-webkit-linear-gradient(to bottom, #43caff 0%, #8ccee9 52%);
+   -webkit-transition:background 0.3s ease-in-out;
+   -moz-transition:background 0.3s ease-in-out;
+   transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+   box-shadow:inset 0 1px 3px rgb(67 202 255);
+}
+
+
+
+@media only screen and (max-width: 580px) {
+  #contact-form{
+     left: 3%;
+     margin-right: 3%;
+     width: 88%;
+     margin-left: 0;
+     padding-left: 3%;
+     padding-right: 3%;
+  }
+}
+
+#contact-me-h1 {
+  margin-left: 40%;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+/* END */

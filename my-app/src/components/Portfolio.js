@@ -5,6 +5,8 @@ import REXimg from "../assets/REX.png";
 import TPGimg from "../assets/TPG.png";
 import ECBimg from "../assets/ECB.png";
 import EMTimg from "../assets/EMT.png";
+import GHicon from "../assets/GHicon.png"
+
 function Portfolio() {
   const projectsArr = [
     {
@@ -13,6 +15,7 @@ function Portfolio() {
       image_src: `${WGimg}`,
       link_href: "https://0blockaye0.github.io/WeatherGroupie/",
       link_class: "project-links",
+      GHLink: "https://github.com/0Blockaye0/WeatherGroupie"
     },
     {
       name: "Travel Blogger",
@@ -20,6 +23,7 @@ function Portfolio() {
       image_src: `${TBimg}`,
       link_href: "https://serene-tor-80949.herokuapp.com/",
       link_class: "project-links",
+      GHLink: "https://github.com/0Blockaye0/Travel-Blogger"
     },
     {
       name: "REX Rescue Express",
@@ -27,6 +31,7 @@ function Portfolio() {
       image_src: `${REXimg}`,
       link_href: "https://still-plains-06700.herokuapp.com/",
       link_class: "project-links",
+      GHLink: "https://github.com/0Blockaye0/REX-Rescue_Express"
     },
     {
       name: "Team Profile Generator",
@@ -34,6 +39,7 @@ function Portfolio() {
       image_src: `${TPGimg}`,
       link_href: "https://github.com/0Blockaye0/Team-Profile-Generator",
       link_class: "project-links",
+      GHLink: "https://github.com/0Blockaye0/Team-Profile-Generator"
     },
     {
       name: "E-Commerce Backend",
@@ -41,6 +47,7 @@ function Portfolio() {
       image_src: `${ECBimg}`,
       link_href: "https://github.com/0Blockaye0/fantastic-umbrella",
       link_class: "project-links",
+      GHLink: "https://github.com/0Blockaye0/fantastic-umbrella"
     },
     {
       name: "Employee Tracker",
@@ -48,6 +55,7 @@ function Portfolio() {
       image_src: `${EMTimg}`,
       link_href: "https://github.com/0Blockaye0/Employee-Tracker",
       link_class: "project-links",
+      GHLink: "https://github.com/0Blockaye0/Employee-Tracker"
     },
 
   ];
@@ -60,7 +68,7 @@ function Portfolio() {
       {projectsArr.map((project, idx) => {
         return (
           <div key={idx}>
-            <h1 className="projName">{project.name}</h1>
+            <h1 className="projName">{project.name}<a href={project.GHLink} className="git-hub-icon"><img alt="github-icon" src={GHicon}></img></a></h1>
             <div className="form-container">
               <div className="form-content">
               <a href={project.link_href} className={project.link_class}>
