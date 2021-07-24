@@ -46,6 +46,10 @@ a:hover {
   color: #43caff;
 }
 
+.header {
+  margin-left: 2rem;
+}
+
 .section-headers {
   text-align: center;
 }
