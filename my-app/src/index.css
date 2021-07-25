@@ -192,6 +192,10 @@ a:not(.active):hover a {
   line-height: 5em;
 }
 
+.is-active {
+  box-shadow: 0 0 15px #51c8ffb6;
+}
+
 /* END */
 
 

@@ -9,6 +9,10 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 
+// const PageNotFound = () => (
+//   <div>404! - <Link to="/"</div>
+// )
+
 function App() {
   return (
     <div className="App">
@@ -18,12 +22,12 @@ function App() {
         <Router basename="/React-Profile">
             <Nav />
             <Switch>
-              <Route path="/" exact component={About} />
+              <Route path="/" exact={true} component={About} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
               <Route path="/resume" component={Resume} />
               <Route path="/portfolio" component={Portfolio} />
-              <Route path="*" exact component={About} />
+              <Route path="*" exact={true} component={About} />
             </Switch>
         </Router>
         <div className="push"></div>
