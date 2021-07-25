@@ -7,16 +7,16 @@ function Nav(props) {
       <nav className="nav">
         <ul>
           <li className="active">
-            <NavLink activeClassName="is-active" id="navLink" to="/about">About</NavLink>
+            <NavLink activateClassName="is-active" id="navLink" to="/about">About</NavLink>
           </li>
           <li>
-            <NavLink activeClassName="is-active" id="navLink" to="/contact">Contact</NavLink>
+            <NavLink activateClassName="is-active" id="navLink" to="/contact">Contact</NavLink>
           </li>
           <li>
-            <NavLink activeClassName="is-active" id="navLink" to="/portfolio">Portfolio</NavLink>
+            <NavLink activateClassName="is-active" id="navLink" to="/portfolio">Portfolio</NavLink>
           </li>
           <li>
-            <NavLink activeClassName="is-active" id="navLink" to="/resume">Resume</NavLink>
+            <NavLink activateClassName="is-active" id="navLink" to="/resume">Resume</NavLink>
           </li>
         </ul>
       </nav>

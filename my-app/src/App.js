@@ -10,7 +10,7 @@ import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 
 // const PageNotFound = () => (
-//   <div>404! - <Link to="/"</div>
+//   <div>404! - <Link to="/">home</Link></div>
 // )
 
 function App() {

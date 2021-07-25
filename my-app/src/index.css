@@ -193,7 +193,7 @@ a:not(.active):hover a {
 }
 
 .is-active {
-  box-shadow: 0 0 15px #51c8ffb6;
+  color: white;
 }
 
 /* END */
