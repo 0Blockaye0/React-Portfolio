@@ -15,7 +15,7 @@ function App() {
       <div className="wrapper">
       <Header />
       <Hero />
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename="/React-Profile">
             <Nav />
             <Switch>
               <Route path="/" exact component={About} />
