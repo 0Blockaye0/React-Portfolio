@@ -15,7 +15,7 @@ function App() {
       <div className="wrapper">
       <Header />
       <Hero />
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Nav />
             <Switch>
               <Route path="/" exact component={About} />
