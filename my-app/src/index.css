@@ -1,13 +1,14 @@
 /* CSS FROM PURPLE SIDEBAR MENU */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /* END */
 
-body, html {
+body,
+html {
   /* height: 100%; */
   /* width: 100%; */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,7 +29,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -79,23 +80,21 @@ a:hover {
 .headshot-img {
   height: auto;
   width: 100%;
-  border:2px solid #fff;
+  border: 2px solid #fff;
   -moz-box-shadow: 0px 6px 5px #ccc;
   -webkit-box-shadow: 0px 6px 5px #ccc;
   box-shadow: 0px 6px 5px #ccc;
-  -moz-border-radius:190px;
-  -webkit-border-radius:190px;
-  border-radius:190px;
-  
-
+  -moz-border-radius: 190px;
+  -webkit-border-radius: 190px;
+  border-radius: 190px;
 }
-
 
 /* css from old portfolio for hero */
 
 .hero-img {
   height: 50%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./assets/simple-background-abstract-slick.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./assets/simple-background-abstract-slick.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,13 +127,13 @@ a:hover {
 } */
 
 .sidebar {
-display: inline-grid;
-float: left;
-position: relative;
-width: 20%;
-height: 100vh;
-background: #062c3ec9;
-font-size: 0.65em;
+  display: inline-grid;
+  float: left;
+  position: relative;
+  width: 20%;
+  height: 100vh;
+  background: #062c3ec9;
+  font-size: 0.65em;
 }
 
 .nav {
@@ -174,11 +173,11 @@ a:not(.active)::after {
 }
 
 a:not(.active):hover a {
-  color: rgba(#FFF, 0.75);
+  color: rgba(#fff, 0.75);
 }
 
 #navLink::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 0.2em;
@@ -198,7 +197,6 @@ a:not(.active):hover a {
 
 /* END */
 
-
 .footer {
   height: 120px;
   width: 100%;
@@ -206,7 +204,7 @@ a:not(.active):hover a {
   justify-content: center;
   flex-direction: column;
   padding-bottom: 2%;
-  background-image: linear-gradient(to right, #006077, black );
+  background-image: linear-gradient(to right, #006077, black);
 }
 
 .push {
@@ -222,7 +220,7 @@ a:not(.active):hover a {
 }  */
 
 /* PROJECT DISPLAY CARD  */
-.form-container  {
+.form-container {
   position: relative;
   transform: translate(-50%, -50%);
   height: 20rem;
@@ -231,9 +229,9 @@ a:not(.active):hover a {
   overflow: hidden;
   border-radius: 2px;
   cursor: pointer;
-  box-shadow: 0 0 35px 8px rgb(67 202 255);
+  box-shadow: 0 0 35px 8px rgb(67 202 255/ 56%);
   margin-top: 12rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   margin-left: 15rem;
 }
 
@@ -281,7 +279,7 @@ a:not(.active):hover a {
   transform: translatex(300px);
 }
 
-.form-container:hover .flap::before{
+.form-container:hover .flap::before {
   transform: translatex(-300px);
 }
 
@@ -295,6 +293,19 @@ a:not(.active):hover a {
   box-shadow: 0 10px 20px #51c8ffef;
 }
 
+.project-title {
+  float: right;
+}
+
+.vid_links {
+  position: relative;
+  margin: -9rem 0rem 6rem 0rem;
+}
+
+.deployed_link {
+  position: relative;
+  margin: -9rem 0rem 6rem 0rem;
+}
 /* END */
 
 #goodbyeH3 {
@@ -310,6 +321,10 @@ a:not(.active):hover a {
 
 .projName {
   padding: 1rem;
+  display: inline-block;
+  position: relative;
+  margin-left: -3rem;
+  margin-bottom: -2rem;
 }
 
 .profileImages {
@@ -317,10 +332,9 @@ a:not(.active):hover a {
   width: 30rem;
 }
 
-
 /* CONTACT FORM */
 #contact-form {
-  background-color: rgba(72,72,72,0.9);
+  background-color: rgba(72, 72, 72, 0.9);
   padding: 10px 20px 30px 20px;
   max-width: 100%;
   width: 40%;
@@ -333,80 +347,91 @@ a:not(.active):hover a {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   font-weight: bold;
-  color: #E5E6E7;
+  color: #e5e6e7;
 }
 
-#contact-form input,   
-#contact-form select,   
-#contact-form textarea,   
-#contact-form label { 
-   font-size: 15px;  
-   margin-bottom: 2px;
-   font-family: Arial, san-serif;
-} 
-#contact-form input,   
-#contact-form select,   
-#contact-form textarea { 
-   width:100%;
-   background: #fff;
-   border: 0; 
-   -moz-border-radius: 4px;  
-   -webkit-border-radius: 4px;  
-   border-radius: 4px;
-   margin-bottom: 25px;  
-   padding: 5px;  
-}  
-#contact-form input:focus,   
-#contact-form select:focus,   
-#contact-form textarea:focus {  
-   background-color: #E5E6E7; 
-}  
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+  font-size: 15px;
+  margin-bottom: 2px;
+  font-family: Arial, san-serif;
+}
+#contact-form input,
+#contact-form select,
 #contact-form textarea {
-   width:100%;
-   height: 150px;
+  width: 100%;
+  background: #fff;
+  border: 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  padding: 5px;
+}
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+  background-color: #e5e6e7;
+}
+#contact-form textarea {
+  width: 100%;
+  height: 150px;
 }
 #contact-form button[type="submit"] {
-   cursor:pointer;
-   width:100%;
-   border:none;
-   background:#991D57;
-   background-image:linear-gradient(to bottom, #51c8ffb6 0%, #1d99d3da 52%);
-   background-image:-moz-linear-gradient(to bottom, #51c8ffb6 0%, #1d99d3da 52%);
-   background-image:-webkit-linear-gradient(to bottom, #51c8ffb6 0%, #1d99d3da 52%);
-   color:#FFF;
-   margin:0 0 5px;
-   padding:10px;
-   border-radius:5px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #991d57;
+  background-image: linear-gradient(to bottom, #51c8ffb6 0%, #1d99d3da 52%);
+  background-image: -moz-linear-gradient(
+    to bottom,
+    #51c8ffb6 0%,
+    #1d99d3da 52%
+  );
+  background-image: -webkit-linear-gradient(
+    to bottom,
+    #51c8ffb6 0%,
+    #1d99d3da 52%
+  );
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 5px;
 }
 #contact-form button[type="submit"]:hover {
-   background-image:linear-gradient(to bottom, #43caff 0%, #8ccee9 52%);
-   background-image:-moz-linear-gradient(to bottom, #43caff 0%, #8ccee9 52%);
-   background-image:-webkit-linear-gradient(to bottom, #43caff 0%, #8ccee9 52%);
-   -webkit-transition:background 0.3s ease-in-out;
-   -moz-transition:background 0.3s ease-in-out;
-   transition:background-color 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom, #43caff 0%, #8ccee9 52%);
+  background-image: -moz-linear-gradient(to bottom, #43caff 0%, #8ccee9 52%);
+  background-image: -webkit-linear-gradient(to bottom, #43caff 0%, #8ccee9 52%);
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 #contact-form button[type="submit"]:active {
-   box-shadow:inset 0 1px 3px rgb(67 202 255);
+  box-shadow: inset 0 1px 3px rgb(67 202 255);
 }
 
-
-
 @media only screen and (max-width: 580px) {
-  #contact-form{
-     left: 3%;
-     margin-right: 3%;
-     width: 88%;
-     margin-left: 0;
-     padding-left: 3%;
-     padding-right: 3%;
+  #contact-form {
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }
 
 #contact-me-h1 {
-  margin-left: 40%;
-  margin-right: auto;
+  margin-left: 25%;
+  margin-right: 5%;
   margin-top: 5rem;
   margin-bottom: 2rem;
+}
+
+#contact-email {
+  font-size: 17px;
+  display: contents;
 }
 /* END */
