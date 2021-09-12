@@ -4,21 +4,17 @@
 
 body,
 html {
-  /* height: 100%; */
-  /* width: 100%; */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: linear-gradient(#000000, #313131); */
   color: ghostwhite;
 }
 
 .wrapper {
   min-height: 100%;
-  /* margin-bottom: -120px; */
 }
 
 body {
@@ -113,18 +109,9 @@ a:hover {
   font-style: italic;
   text-shadow: 0 0 10px black;
 }
-
 /* END */
 
 /* CSS FROM PURPLE SIDEBAR MENU */
-
-/* .sidebar {
-  position: fixed;
-  width: 25%;
-  height: 100vh;
-  background: #312450;
-  font-size: 0.65em;
-} */
 
 .sidebar {
   display: inline-grid;
@@ -194,7 +181,6 @@ a:not(.active):hover a {
 .is-active {
   color: white;
 }
-
 /* END */
 
 .footer {
@@ -211,28 +197,20 @@ a:not(.active):hover a {
   height: 500px;
 }
 
-/* #footerLink {
-  line-height: 2em;
-}
-
-#footerLink::after {
-  display: none;
-}  */
-
 /* PROJECT DISPLAY CARD  */
 .form-container {
   position: relative;
   transform: translate(-50%, -50%);
-  height: 20rem;
-  width: 35rem;
+  height: 13rem;
+  width: 22rem;
   background: black;
   overflow: hidden;
   border-radius: 2px;
   cursor: pointer;
-  box-shadow: 0 0 35px 8px rgb(67 202 255/ 56%);
-  margin-top: 12rem;
-  margin-bottom: 0.5rem;
-  margin-left: 15rem;
+  box-shadow: 0 0 35px 8px rgb(67 202 255 / 56%);
+  margin-top: 10rem;
+  margin-bottom: 4.5rem;
+  margin-left: 11rem;
 }
 
 .form-content {
@@ -243,8 +221,8 @@ a:not(.active):hover a {
   color: black;
   padding: 40px;
   background: black;
-  /* font-family: 'Merriweather', serif; */
 }
+
 .flap {
   width: 100%;
   height: 100%;
@@ -255,7 +233,6 @@ a:not(.active):hover a {
   content: "";
   height: 100%;
   width: 50%;
-  /* background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white; */
   background-position: 100px;
   background-repeat: no-repeat;
   transition: 1s;
@@ -268,7 +245,6 @@ a:not(.active):hover a {
   height: 100%;
   width: 50%;
   right: 0;
-  /* background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white; */
   background-position: -200px;
   background-repeat: no-repeat;
   transition: 1s;
@@ -328,8 +304,8 @@ a:not(.active):hover a {
 }
 
 .profileImages {
-  height: 16rem;
-  width: 30rem;
+  height: 11rem;
+  width: 17rem;
 }
 
 /* CONTACT FORM */
@@ -400,6 +376,7 @@ a:not(.active):hover a {
   padding: 10px;
   border-radius: 5px;
 }
+
 #contact-form button[type="submit"]:hover {
   background-image: linear-gradient(to bottom, #43caff 0%, #8ccee9 52%);
   background-image: -moz-linear-gradient(to bottom, #43caff 0%, #8ccee9 52%);
@@ -408,6 +385,7 @@ a:not(.active):hover a {
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
+
 #contact-form button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgb(67 202 255);
 }
@@ -435,3 +413,10 @@ a:not(.active):hover a {
   display: contents;
 }
 /* END */
+
+.overview-container {
+  height: 8rem;
+  overflow: scroll;
+  margin-top: -4rem;
+  width: 23rem;
+}
