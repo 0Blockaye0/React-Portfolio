@@ -112,7 +112,7 @@ function Portfolio() {
                     alt=""
                     id={project.image_id}
                     src={project.image_src}
-                    style={{ height: `11rem`, width: `17rem` }}
+                    style={{ height: `13rem`, width: `22rem` }}
                   ></img>
                 </a>
               </div>

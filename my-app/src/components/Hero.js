@@ -5,11 +5,11 @@ function Hero() {
     return (
         <section className="hero-img">
             <div className="hero-text">
-                <p>
+                <h3>
                     INDIANAPOLIS
                     BASED
                     WEB DEVELOPER
-                </p>
+                </h3>
             </div>
         </section>
     )
