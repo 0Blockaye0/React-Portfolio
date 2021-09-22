@@ -129,9 +129,8 @@ a:hover {
   position: relative;
   margin: 0 15%;
   text-align: right;
-  top: 50%;
-  transform: translateY(-50%);
   font-weight: bold;
+  padding-bottom: 2rem;
 }
 
 .nav ul {
@@ -315,9 +314,9 @@ a:not(.active):hover a {
   background-color: rgba(72, 72, 72, 0.9);
   padding: 10px 20px 30px 20px;
   max-width: 100%;
-  width: 40%;
+  width: 60%;
   float: left;
-  left: 61%;
+  left: 60%;
   position: absolute;
   margin-top: 30px;
   margin-left: -319px;
@@ -394,12 +393,11 @@ a:not(.active):hover a {
 
 @media only screen and (max-width: 845px) {
   #contact-form {
-    left: 3%;
+    left: 14%;
     margin-right: 3%;
-    width: 88%;
+    width: 63%;
     margin-left: 0;
     padding-left: 3%;
-    padding-right: 3%;
   }
 }
 
@@ -413,6 +411,7 @@ a:not(.active):hover a {
 #contact-email {
   font-size: 17px;
   display: contents;
+  word-wrap: break-word;
 }
 /* END */
 
@@ -426,10 +425,15 @@ a:not(.active):hover a {
 @media only screen and (max-width: 845px) {
   .sidebar {
     font-size: 0.75rem;
+    display: block;
+    width: 100%;
+    height: fit-content;
+    float: none;
+    font-size: 12px;
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .headshot-div {
@@ -439,6 +443,29 @@ a:not(.active):hover a {
     margin-bottom: 4rem;
     float: none;
   }
+
+  .about-p-tags {
+    margin: 0 1.5rem 0 0;
+  }
+
+  .nav ul {
+    list-style: none;
+    padding-left: 0%;
+    margin: auto;
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #navLink{
+    margin: 0rem 2rem;
+  }
+
+  #contact-me-h1 {
+    margin-left: 5%;
+  }
+  
 }
 
 /* @media only screen and (max-width: 700px) {

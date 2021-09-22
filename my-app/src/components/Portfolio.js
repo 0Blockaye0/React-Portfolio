@@ -139,7 +139,10 @@ function Portfolio() {
               )}
             </div>
 
-            <div className="overview-container">{project.overview}</div>
+            <div 
+            className="overview-container"
+            style={{ fontSize: `1.5rem`}}
+            >{project.overview}</div>
           </div>
         );
       })}
